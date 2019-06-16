@@ -1,0 +1,69 @@
+#Formation : Découvrir Python 3
+	TP 01 
+	CH 1 : Découvrir le language Python
+
+1.Les variables :
+	adresse qui indique l'emplacement de la mémoire vive ou sont stockées les informations .
+
+	ex : age = 20
+
+	1.1 Concaténation :
+		ex : age = age + " je suis encore jeune !!"
+	1.2 Multiplier une chaine de caractères :
+		ex : chaine = "jeune"
+			 chaine * 3
+
+	1.3 Echaper les quotes : 
+		ex : texte = 'Bonjour je m\'apelle "oliver"'
+		 ou 
+		 	 texte= "Bonjour je m'apelle \"oliver\""
+
+	Les types de variable :
+	En python une variable est typée , c'est à dire qu'en plus d'une valeur, une variable possède une sorte d'étiquette qui indique ce que contient cette boite virtuelle.
+
+	ex : type(age) #connaitre le typr d'une variable .
+
+2.La lib Decimal pour les calculs
+	Le résultat de calculs en python peut être différent en fonction des machines que vous utilisez si vous travaillez avec plus de précisions utilisez Decimal.
+	ex : from decimal import Decimal
+		 a = 10
+		 b = 3
+		 a/b 
+		 avec Decimal :
+		 a=Decimal('10')
+		 b=Decimal('3')
+		 a/b
+		 resultat :
+		 Decimal('3.333333333')
+
+3.Les Listes :
+	List/array
+
+	3.1 Creation de liste :
+		ex : list = []
+
+		>>> list = []
+		>>> type(list)
+		<class 'list'>
+
+	3.2 Ajouter une valeur :
+		->Lors de la création de la liste 
+			ex : list = [4,3,2,1]
+		->Après la création de la liste 
+			ex : list2=[]
+				 list2.append(1)
+				 list2.append("ok")
+
+	3.3 Afficher un item d'une liste :
+		ex : list=[1,2,3]
+			 list[0]
+
+	3.4 Modifier une valeur avec son index :
+		ex : list[1]="z"
+
+	3.5 Supprimer une entrée :
+		3.5.1 Avec index :
+			ex : del list[1]
+		3.5.2 Avec sa valeur :
+			ex : list.remove(1)
+				
